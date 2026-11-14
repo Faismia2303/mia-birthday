@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff0f5">
+  <title>Happy Birthday, Mia! 💗</title>
+  <style>
+    :root{--pink:#ff8fb1;--rose:#ff5f91;--cream:#fffaf1;--ink:#59414b;--lilac:#eadfff}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--cream);color:var(--ink);font-family:"Trebuchet MS",system-ui,sans-serif;overflow-x:hidden}
+    .wrap{width:min(920px,92%);margin:auto}
+    .hero{min-height:100svh;display:grid;place-items:center;text-align:center;padding:48px 18px;position:relative;overflow:hidden;background:radial-gradient(circle at 15% 20%,#ffe0eb 0 8%,transparent 9%),radial-gradient(circle at 85% 78%,#e9ddff 0 10%,transparent 11%),linear-gradient(145deg,#fff0f5,#fff8e9)}
+    .hero-card{max-width:700px;background:#ffffffc9;border:3px solid white;border-radius:34px;padding:clamp(25px,6vw,55px);box-shadow:0 18px 50px #df8eaa33;position:relative;z-index:1}
+    .eyebrow{letter-spacing:3px;text-transform:uppercase;font-size:.78rem;color:#bd6688;font-weight:800}
+    h1{font-size:clamp(2.6rem,9vw,5.4rem);line-height:.98;margin:18px 0;color:#ec6495}
+    .subtitle{font-size:1.1rem;line-height:1.7;max-width:520px;margin:0 auto 25px}
+    .cake{font-size:clamp(5rem,17vw,8rem);filter:drop-shadow(0 9px 0 #ffd6e4);animation:bob 2.4s ease-in-out infinite}
+    @keyframes bob{50%{transform:translateY(-12px) rotate(2deg)}}
+    .btn{border:0;border-radius:999px;padding:14px 23px;background:var(--rose);color:white;font-weight:800;font-size:1rem;cursor:pointer;box-shadow:0 7px 0 #d94b7b;transition:.15s}
+    .btn:hover{transform:translateY(-2px);box-shadow:0 9px 0 #d94b7b}
+    .btn:active{transform:translateY(4px);box-shadow:0 3px 0 #d94b7b}
+    .music-btn{background:#9c7ad6;box-shadow:0 7px 0 #7655b1}
+    .music-btn:hover{box-shadow:0 9px 0 #7655b1}
+    .music-btn:active{box-shadow:0 3px 0 #7655b1}
+    .float{position:absolute;font-size:2rem;opacity:.65;animation:drift 7s ease-in-out infinite}
+    .f1{top:12%;left:8%}.f2{top:20%;right:9%;animation-delay:1s}.f3{bottom:12%;left:14%;animation-delay:2s}.f4{bottom:18%;right:12%;animation-delay:3s}
+    @keyframes drift{50%{transform:translateY(-22px) rotate(15deg)}}
+    section{padding:75px 0}
+    .section-title{text-align:center;font-size:clamp(2rem,6vw,3rem);color:#e96796;margin:0 0 12px}
+    .section-sub{text-align:center;margin:0 auto 32px;max-width:560px;line-height:1.6}
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+    .photo{background:white;padding:10px 10px 17px;border-radius:15px;box-shadow:0 9px 25px #9d70801c;transform:rotate(var(--tilt));}
+    .photo img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:9px;background:linear-gradient(135deg,#ffe0ec,#eee3ff)}
+    .photo p{text-align:center;margin:12px 2px 0;font-weight:700;font-size:.93rem}
+    .letter{max-width:720px;margin:auto;background:white;border:2px dashed #f4a4bf;border-radius:25px;padding:clamp(23px,5vw,42px);line-height:1.9;box-shadow:0 12px 35px #b9788b18}
+    .letter .salute{font-size:1.35rem;color:#e96796;font-weight:900}
+    .cake-area{text-align:center;background:#fff0f5;border-radius:30px;padding:35px 20px}
+    .big-cake{font-size:7rem;cursor:pointer;display:inline-block;transition:.3s;filter:drop-shadow(0 10px 0 #ffc9dc)}
+    .big-cake:hover{transform:scale(1.06)}
+    .cake-note{min-height:48px;font-weight:700;color:#b64e79}
+    footer{text-align:center;padding:28px 15px 45px;color:#9b7785}
+    .hidden-surprise{display:none;margin:25px auto 0;max-width:600px;background:white;border-radius:20px;padding:24px;line-height:1.8;box-shadow:0 10px 30px #b9788b18}
+    .hidden-surprise.show{display:block;animation:pop .5s ease}
+    @keyframes pop{from{opacity:0;transform:scale(.85)}to{opacity:1;transform:scale(1)}}
+    .confetti{position:fixed;top:-30px;z-index:10;pointer-events:none;animation:fall 3.5s linear forwards}
+    @keyframes fall{to{transform:translateY(110vh) rotate(720deg);opacity:0}}
+    @media(max-width:650px){.gallery{grid-template-columns:1fr 1fr}.gallery .photo:last-child{grid-column:1/-1;width:70%;justify-self:center}}
+    @media(max-width:420px){.gallery{grid-template-columns:1fr}.gallery .photo:last-child{grid-column:auto;width:100%}}
+  </style>
+</head>
+<body>
+  <header class="hero" id="top">
+    <span class="float f1">💗</span><span class="float f2">⭐</span><span class="float f3">🌷</span><span class="float f4">🎀</span>
+    <div class="hero-card">
+      <div class="eyebrow">A little birthday surprise for</div>
+      <div class="cake">🎂</div>
+      <h1>Happy Birthday,<br>Mia!</h1>
+      <p class="subtitle">To my favourite person — hari ni hari istimewa untuk someone yang sangat special. I made a little corner of the internet just for you. 💗</p>
+      <button class="btn" onclick="document.querySelector('#memories').scrollIntoView()">Open your surprise ✨</button>
+      <p style="font-size:.85rem;margin:24px 0 0;color:#a77b8c">23 November · Made with love</p>
+    </div>
+  </header>
+
+  <main>
+    <section id="memories" class="wrap">
+      <h2 class="section-title">Our little memories 📸</h2>
+      <p class="section-sub">A few moments I want to keep close. Replace these sample pictures with your favourite photos together.</p>
+      <div class="gallery">
+        <div class="photo" style="--tilt:-2deg"><img src="assets/photo1.jpg" alt="Our memory 1"><p>One of my favourite days 💞</p></div>
+        <div class="photo" style="--tilt:2deg"><img src="assets/photo2.jpg" alt="Our memory 2"><p>Little moments, big memories 🌷</p></div>
+        <div class="photo" style="--tilt:-1deg"><img src="assets/photo3.jpg" alt="Our memory 3"><p>More memories to come ⭐</p></div>
+      </div>
+    </section>
+
+    <section style="background:#fff1f6">
+      <div class="wrap">
+        <h2 class="section-title">A letter for you 💌</h2>
+        <p class="section-sub">A small message from me to you.</p>
+        <article class="letter">
+          <div class="salute">Dear Mia,</div>
+          <p>Happy birthday, sayang! I hope this new chapter brings you so much happiness, good health and beautiful opportunities. You deserve all the good things in this world.</p>
+          <p>Thank you for being part of my life and for all the little moments we've shared. Even the simplest days can become special when I get to share them with you. I may not always know the perfect words to say, but I hope you always know how much I appreciate you.</p>
+          <p>Semoga semua impian Mia dipermudahkan, always stay true to yourself, and never stop smiling. I hope today reminds you how loved and appreciated you are.</p>
+          <p>Here's to more laughter, more memories and many more birthdays. Enjoy your day, birthday girl! 🎀</p>
+          <p style="margin-bottom:0">With love,<br><strong>Fais 💗</strong></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="wrap">
+      <h2 class="section-title">Make a birthday wish 🕯️</h2>
+      <p class="section-sub">Tap the cake to make a wish. Jangan lupa wish besar-besar!</p>
+      <div class="cake-area">
+        <div class="big-cake" role="button" tabindex="0" aria-label="Make a birthday wish" onclick="wish()">🎂</div>
+        <div class="cake-note" id="cakeNote">Tap the cake, birthday girl! ✨</div>
+        <button class="btn" onclick="wish()">I made a wish! 💫</button>
+      </div>
+    </section>
+
+    <section style="padding-top:0">
+      <div class="wrap" style="text-align:center">
+        <h2 class="section-title">One last thing… 🎁</h2>
+        <p class="section-sub">There's one more little message waiting for you.</p>
+        <button class="btn" onclick="reveal()">Open your secret surprise 💝</button>
+        <div class="hidden-surprise" id="secret">
+          <div style="font-size:3rem">🧸💗🌷</div>
+          <h3 style="color:#e96796">You are one of a kind, Mia!</h3>
+          <p>Tak kira sejauh mana hari membawa kita, I hope you never forget how special you are. Keep being you. Happy birthday once again! 💗</p>
+          <p><strong>— Fais</strong></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>Made with 💗 for Mia Maisarah · 23.11.2026</footer>
+  <audio id="bgMusic" loop>
+    <source src="assets/song.mp3" type="audio/mpeg">
+  </audio>
+  <button id="musicButton" class="btn music-btn" style="position:fixed;right:16px;bottom:16px;z-index:5;font-size:.9rem" onclick="toggleMusic()">♫ Play music</button>
+
+  <script>
+    const music = document.getElementById('bgMusic');
+    async function toggleMusic(){
+      const button = document.getElementById('musicButton');
+      if(music.paused){
+        try{await music.play();button.textContent='♫ Pause music';}
+        catch(e){alert('Add your music file as assets/song.mp3 first, then refresh this page.');}
+      }else{music.pause();button.textContent='♫ Play music';}
+    }
+    function confetti(){
+      const pieces=['💗','🎀','✨','🌸','⭐'];
+      for(let i=0;i<28;i++){
+        const el=document.createElement('span');el.className='confetti';
+        el.textContent=pieces[Math.floor(Math.random()*pieces.length)];
+        el.style.left=Math.random()*100+'vw';el.style.fontSize=(16+Math.random()*18)+'px';
+        el.style.animationDelay=Math.random()*.8+'s';document.body.appendChild(el);
+        setTimeout(()=>el.remove(),4500);
+      }
+    }
+    function wish(){
+      document.getElementById('cakeNote').textContent='Wish made! May your dreams come true, Mia! 💗';
+      confetti();
+    }
+    function reveal(){
+      document.getElementById('secret').classList.toggle('show');
+      confetti();
+    }
+  </script>
+</body>
+</html>
